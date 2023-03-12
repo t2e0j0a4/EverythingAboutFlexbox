@@ -14,10 +14,6 @@
     box-sizing: border-box;
 }
 
-body {
-    position: relative;
-}
-
 ::-webkit-scrollbar {
     width: 8px;
 }
@@ -397,7 +393,7 @@ body {
     height: 70px;
     background-color: var(--charcoal);
     position: absolute;
-    bottom: 20px;
+    top: 20px;
     left: -1000px;
     border-radius: 8px;
     box-shadow: 2px 4px 8px 4px #5b5b5ba0;
@@ -410,7 +406,7 @@ body {
 }
 
 .stickyAlertBox.showTheAlert {
-    position: sticky;
+    position: fixed;
     left: 20px;
 }
 
@@ -461,6 +457,10 @@ body {
 
 @media only screen and (max-width: 600px) {
 
+    * {
+        cursor: default;
+    }
+
     .stickyAlertBox {
         width: 96%;
         margin: auto;
@@ -494,6 +494,11 @@ body {
 
     .spells {
         font-size: 12px;
+    }
+
+    .stickyAlertBox.showTheAlert {
+        position: fixed;
+        left: 5px;
     }
 }
 
