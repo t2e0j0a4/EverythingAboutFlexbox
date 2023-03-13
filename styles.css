@@ -16,6 +16,7 @@
 
 ::-webkit-scrollbar {
     width: 8px;
+    height: 0;
 }
 
 ::-webkit-scrollbar-track {
@@ -60,7 +61,7 @@
 
 /* Flexbox Options */
 
-.flexboxOptions , .flexboxGapOptions {
+.flexboxOptions , .flexboxGapOptions , .flexboxWrapOptions {
     width: 96%;
     height: 100%;
     padding: 0.8rem;
@@ -108,7 +109,7 @@
     row-gap: 1rem;
 }
 
-.allFlexboxOptions .moreOptions {
+.allFlexboxOptions .moreOptions , .wrapDivs {
     width: 100%;
     display: flex;
     flex-direction: row;
@@ -121,7 +122,7 @@
     border-bottom: 1px solid #232323;
 }
 
-.allFlexboxOptions .moreOptions:last-child {
+.allFlexboxOptions .moreOptions:last-child , .wrapDivs:last-child {
     border-bottom: 0px;
 }
 
@@ -233,7 +234,7 @@
 
 
 .gapSpan {
-    font-size: 18px;
+    font-size: 14px;
     color: var(--yellow);
     padding: 3px;
     border-radius: 4px;
@@ -342,16 +343,6 @@
     justify-content: space-evenly;
 }
 
-/* .makeAlignflexstart {
-    display: flex;
-    align-items: flex-start;
-} */
-
-/* .makeAlignflexend {
-    display: flex;
-    align-items: flex-end;
-} */
-
 .makeAlignstretch {
     display: flex;
     align-items: stretch;
@@ -375,6 +366,21 @@
 .makeAlignend {
     display: flex;
     align-items: flex-end;
+}
+
+.makeFlexWrapwrapnone {
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.makeFlexWrapwrapyes {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.makeFlexWrapwraprev {
+    display: flex;
+    flex-wrap: wrap-reverse;
 }
 
 /* Media Queries */
@@ -446,6 +452,38 @@
     font-weight: 800;
 }
 
+
+/* Code Blocks */
+
+.flexBoxCodeBlocks {
+    width: 96%;
+    margin: 1rem auto;
+}
+
+.flexBoxCodeBlocks .codeBlockHeads {
+    width: -moz-fit-content;
+    width: fit-content;
+    font-family: var(--font);
+    font-size: 21px;
+    font-weight: 800;
+    background-color: var(--yellow);
+    color: var(--charcoal);
+    padding: 4px;
+    border-radius: 4px;
+    margin-top: 2rem;
+}
+
+.copy-to-clipboard-button  {
+  padding: 10px 20px !important;
+  cursor: pointer;
+  margin: 5px;
+  font-family: var(--font) !important;
+}
+
+.copy-to-clipboard-button span {
+  font-size: 12px;
+  color: white;
+}
 
 @media only screen and (max-width : 800px) {
     .stickyAlertBox {

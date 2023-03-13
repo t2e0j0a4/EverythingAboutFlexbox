@@ -6,6 +6,7 @@
     <link rel="shortcut icon" href="./Assets/Flexbox.png" type="image/x-icon">
     <title>Everything about Flexbox!</title>
     <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="./PrismJS/Prism.css">
 </head>
 <body>
 
@@ -20,7 +21,7 @@
         <!-- Flexbox Choose Option -->
         <div class="option firstOption">
             <label for="convertFlexbox" class="labels">Flexbox</label>
-            <input type="checkbox" name="flexbox" id="convertFlexbox" class="convertFlex checkbox">
+            <input type="checkbox" data-property="display" data-happen="flex" name="flexbox" id="convertFlexbox" class="convertFlex checkbox">
         </div>
 
         <!-- Direction, Justify Content, Align Items -->
@@ -31,19 +32,19 @@
                 <div class="directionHead title">Direction :-</div>
                 <div class="optionRow">
                     <label for="rowFlexbox" class="labels">Row</label>
-                    <input type="checkbox" data-dir="row" name="rowflexbox" id="rowFlexbox" class="rowFlex checkbox checkDir">
+                    <input type="checkbox" data-dir="row" name="rowflexbox" id="rowFlexbox" class="rowFlex checkbox checkDir" data-property="flex-direction" data-happen="row">
                 </div>
                 <div class="optionColumn">
                     <label for="columnFlexbox" class="labels">Column</label>
-                    <input type="checkbox" data-dir="col" name="columnflexbox" id="columnFlexbox" class="columnFlex checkbox checkDir">
+                    <input type="checkbox" data-dir="col" name="columnflexbox" id="columnFlexbox" class="columnFlex checkbox checkDir" data-property="flex-direction" data-happen="column">
                 </div>
                 <div class="optionRowRev">
                     <label for="rowrevFlexbox" class="labels">Row Reverse</label>
-                    <input type="checkbox" data-dir="rowre" name="rowrevflexbox" id="rowrevFlexbox" class="rowrevFlex checkbox checkDir">
+                    <input type="checkbox" data-dir="rowre" name="rowrevflexbox" id="rowrevFlexbox" class="rowrevFlex checkbox checkDir" data-property="flex-direction" data-happen="row-reverse">
                 </div>
                 <div class="optionColumnRev">
                     <label for="columnrevFlexbox" class="labels">Column Reverse</label>
-                    <input type="checkbox" data-dir="colre" name="columnrevflexbox" id="columnrevFlexbox" class="columnrevFlex checkbox checkDir">
+                    <input type="checkbox" data-dir="colre" name="columnrevflexbox" id="columnrevFlexbox" class="columnrevFlex checkbox checkDir" data-property="flex-direction" data-happen="column-reverse">
                 </div>
             </div>
 
@@ -52,35 +53,35 @@
                 <div class="justifyHead title">Justify Content :-</div>
                 <div class="justifyStart">
                     <label for="justifystartFlexbox" class="labels">Flex-start</label>
-                    <input type="checkbox" data-justify="flexstart" name="justifystartflexbox" id="justifystartFlexbox" class="jcsFlex checkbox checkJustify">
+                    <input type="checkbox" data-justify="flexstart" name="justifystartflexbox" id="justifystartFlexbox" class="jcsFlex checkbox checkJustify" data-property="justify-content" data-happen="flex-start">
                 </div>
                 <div class="justifyCenter">
                     <label for="justifycenterFlexbox" class="labels">Center</label>
-                    <input type="checkbox" data-justify="center" name="justifycenterflexbox" id="justifycenterFlexbox" class="jccFlex checkbox checkJustify">
+                    <input type="checkbox" data-justify="center" name="justifycenterflexbox" id="justifycenterFlexbox" class="jccFlex checkbox checkJustify" data-property="justify-content" data-happen="center">
                 </div>
                 <div class="justifyEnd">
                     <label for="justifyendFlexbox" class="labels">Flex-end</label>
-                    <input type="checkbox" data-justify="flexend" name="justifyendflexbox" id="justifyendFlexbox" class="jceFlex checkbox checkJustify">
+                    <input type="checkbox" data-justify="flexend" name="justifyendflexbox" id="justifyendFlexbox" class="jceFlex checkbox checkJustify" data-property="justify-content" data-happen="flex-end">
                 </div>
                 <div class="justifyst">
                     <label for="justifystFlexbox" class="labels">Start</label>
-                    <input type="checkbox" data-justify="start" name="justifystflexbox" id="justifystFlexbox" class="jcstFlex checkbox checkJustify">
+                    <input type="checkbox" data-justify="start" name="justifystflexbox" id="justifystFlexbox" class="jcstFlex checkbox checkJustify" data-property="justify-content" data-happen="start">
                 </div>
                 <div class="justifyen">
                     <label for="justifyenFlexbox" class="labels">End</label>
-                    <input type="checkbox" data-justify="end" name="justifyenflexbox" id="justifyenFlexbox" class="jcenFlex checkbox checkJustify">
+                    <input type="checkbox" data-justify="end" name="justifyenflexbox" id="justifyenFlexbox" class="jcenFlex checkbox checkJustify" data-property="justify-content" data-happen="end">
                 </div>
                 <div class="justifySpaceBtw">
                     <label for="justifysbFlexbox" class="labels">Space-between</label>
-                    <input type="checkbox" data-justify="spacebtw" name="justifysbflexbox" id="justifysbFlexbox" class="jcsbFlex checkbox checkJustify">
+                    <input type="checkbox" data-justify="spacebtw" name="justifysbflexbox" id="justifysbFlexbox" class="jcsbFlex checkbox checkJustify" data-property="justify-content" data-happen="space-between">
                 </div>
                 <div class="justifySpaceArnd">
                     <label for="justifysaFlexbox" class="labels">Space-around</label>
-                    <input type="checkbox" data-justify="spacearnd" name="justifysaflexbox" id="justifysaFlexbox" class="jcsaFlex checkbox checkJustify">
+                    <input type="checkbox" data-justify="spacearnd" name="justifysaflexbox" id="justifysaFlexbox" class="jcsaFlex checkbox checkJustify" data-property="justify-content" data-happen="space-around">
                 </div>
                 <div class="justifySpaceEnly">
                     <label for="justifyseFlexbox" class="labels">Space-evenly</label>
-                    <input type="checkbox" data-justify="spaceenly" name="justifyseflexbox" id="justifyseFlexbox" class="jcsaFlex checkbox checkJustify">
+                    <input type="checkbox" data-justify="spaceenly" name="justifyseflexbox" id="justifyseFlexbox" class="jcsaFlex checkbox checkJustify" data-property="justify-content" data-happen="space-evenly">
                 </div>
             </div>
 
@@ -93,23 +94,23 @@
                 </div> -->
                 <div class="alignStart">
                     <label for="alignstartFlexbox" class="labels">Start</label>
-                    <input type="checkbox" data-align="start" name="alignstartflexbox" id="alignstartFlexbox" class="aisFlex checkbox checkAlign">
+                    <input type="checkbox" data-align="start" name="alignstartflexbox" id="alignstartFlexbox" class="aisFlex checkbox checkAlign" data-property="align-items" data-happen="flex-start">
                 </div>
                 <div class="alignCenter">
                     <label for="aligncenterFlexbox" class="labels">Center</label>
-                    <input type="checkbox" data-align="center" name="aligncenterflexbox" id="aligncenterFlexbox" class="aicFlex checkbox checkAlign">
+                    <input type="checkbox" data-align="center" name="aligncenterflexbox" id="aligncenterFlexbox" class="aicFlex checkbox checkAlign" data-property="align-items" data-happen="center">
                 </div>
                 <div class="alignStretch">
                     <label for="alignstretchFlexbox" class="labels">Stretch</label>
-                    <input type="checkbox" data-align="stretch" name="alignstretchflexbox" id="alignstretchFlexbox" class="aistreFlex checkbox checkAlign">
+                    <input type="checkbox" data-align="stretch" name="alignstretchflexbox" id="alignstretchFlexbox" class="aistreFlex checkbox checkAlign" data-property="align-items" data-happen="stretch">
                 </div>
                 <div class="alignBaseline">
                     <label for="alignbaselineFlexbox" class="labels">Baseline</label>
-                    <input type="checkbox" data-align="baseline" name="alignbaselineflexbox" id="alignbaselineFlexbox" class="aistreFlex checkbox checkAlign">
+                    <input type="checkbox" data-align="baseline" name="alignbaselineflexbox" id="alignbaselineFlexbox" class="aistreFlex checkbox checkAlign" data-property="align-items" data-happen="baseline">
                 </div>
                 <div class="alignEnd">
                     <label for="alignendFlexbox" class="labels">End</label>
-                    <input type="checkbox" data-align="end" name="alignendflexbox" id="alignendFlexbox" class="aieFlex checkbox checkAlign">
+                    <input type="checkbox" data-align="end" name="alignendflexbox" id="alignendFlexbox" class="aieFlex checkbox checkAlign" data-property="align-items" data-happen="flex-end">
                 </div>
                 <!-- <div class="alignFlexEnd">
                     <label for="alignflexendFlexbox" class="labels">Flex-end</label>
@@ -124,17 +125,38 @@
         <div class="title gapHead">Gaps :-</div>
         <div class="bothGaps gapDivs">
             <label for="flexboxItemsGap" class="labels">Gap (Row & Col) <span class="gapForBoth gapSpan">(0px)</span></label>
-            <input type="range" data-gap="both" data-measure="px" name="bothgapflexbox" id="flexboxItemsGap" class="gapBoth gaps" min="0" max="20" value="0">
+            <input type="range" data-gap="both" data-measure="px" name="bothgapflexbox" id="flexboxItemsGap" class="gapBoth gaps" min="0" max="20" value="0" data-property="gap" data-happen="0px">
         </div>
         <div class="rowGap gapDivs">
             <label for="flexboxItemsRowGap" class="labels">Row Gap <span class="gapForRow gapSpan">(0px)</span></label>
-            <input type="range" data-gap="row" data-measure="px" name="rowgapflexbox" id="flexboxItemsRowGap" class="gapRow gaps" min="0" max="20" value="0">
+            <input type="range" data-gap="row" data-measure="px" name="rowgapflexbox" id="flexboxItemsRowGap" class="gapRow gaps" min="0" max="20" value="0" data-property="row-gap" data-happen="0px">
         </div>
         <div class="colGap gapDivs">
             <label for="flexboxItemsColGap" class="labels">Column Gap <span class="gapForCol gapSpan">(0px)</span></label>
-            <input type="range" data-gap="col" data-measure="px" name="colgapflexbox" id="flexboxItemsColGap" class="gapRow gaps" min="0" max="20" value="0">
+            <input type="range" data-gap="col" data-measure="px" name="colgapflexbox" id="flexboxItemsColGap" class="gapRow gaps" min="0" max="20" value="0" data-property="column-gap" data-happen="0px">
         </div>
     </div>
+
+
+    <!-- Flex Wraps -->
+    <div class="flexboxWrapOptions">
+        <div class="title wrapHead">Flex Wraps :-</div>
+        <div class="flexNoWrap wrapDivs">
+            <label for="flexboxNoWrap" class="labels">No Wrap</label>
+            <input type="checkbox" data-wrap="wrapnone" name="nowrap" id="flexboxNoWrap" class="checkbox nowrap flexWrappers" data-property="flex-wrap" data-happen="nowrap">
+        </div>
+        <div class="flexWrap wrapDivs">
+            <label for="flexboxWrap" class="labels">Wrap</label>
+            <input type="checkbox" data-wrap="wrapyes" name="wrap" id="flexboxWrap" class="checkbox wrap flexWrappers" data-property="flex-wrap" data-happen="wrap">
+        </div>
+        <div class="flexWrapRev wrapDivs">
+            <label for="flexboxWrapRev" class="labels">Wrap Reverse</label>
+            <input type="checkbox" data-wrap="wraprev" name="wraprev" id="flexboxWrapRev" class="checkbox wraprev flexWrappers" data-property="flex-wrap" data-happen="wrap-reverse">
+        </div>
+    </div>
+
+
+    <!-- Flexbox -->
 
     <div class="flexbox">
         <div class="outSpell spells">BOX</div>
@@ -149,11 +171,41 @@
         </div>
     </div>
 
+    <!-- Code Blocks -->
+
+    <div class="flexBoxCodeBlocks">
+        <!-- HTML -->
+        <div class="htmlCodeBlock">
+            <p class="htmlHead codeBlockHeads">HTML</p>
+            <pre>
+                <code class="language-html">
+&lt;div class="flexbox"&gt;
+    &lt;div class="flexitem item1"&gt;&lt;/div&gt;
+    &lt;div class="flexitem item2"&gt;&lt;/div&gt;
+    &lt;div class="flexitem item3"&gt;&lt;/div&gt;
+&lt;/div&gt;</code>
+            </pre>
+        </div>
+
+        <!-- CSS : Imp -->
+        <div class="cssCodeBlock">
+            <p class="cssHead codeBlockHeads">CSS</p>
+            <pre>
+                <code class="language-css">
+/* Flexbox! */</code>
+            </pre>
+        </div>
+
+    </div>
+
+    <!-- Alerts -->
+
     <div class="stickyAlertBox">
         <div class="closeTheAlert">X</div>
         <span class="alertMessage">Shows Alert Message.</span>
     </div>
     
     <script src="./index.js"></script>
+    <script src="./PrismJS/Prism.js"></script>
 </body>
 </html>
