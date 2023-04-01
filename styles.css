@@ -218,10 +218,11 @@
     border-radius: 50%;
     margin: 2px 2px 2px 2px;
     transition: transform 0.1s ease-in-out;
+    transform: scale(1.6);
 }
 
 .gaps::-webkit-slider-thumb:hover {
-    transform: scale(2);
+    transform: scale(1.8)
 }
 
 .gaps::-webkit-slider-thumb::before {
