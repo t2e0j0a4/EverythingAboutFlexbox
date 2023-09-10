@@ -248,7 +248,8 @@
 /* Flexbox Screen */
 
 .flexbox {
-    width: 96%;
+    width: 1200px;
+    max-width: 96%;
     margin: 0.6rem auto;
     height: 100%;
     background-color: var(--charcoal);
@@ -458,7 +459,8 @@
 /* Code Blocks */
 
 .flexBoxCodeBlocks {
-    width: 96%;
+    width: 1200px;
+    max-width: 96%;
     margin: 1rem auto;
 }
 
